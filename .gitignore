@@ -1,0 +1,41 @@
+# Build artifacts
+build/
+*.o
+*.out
+*.exe
+
+# LaTeX temporary files
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+*.egg
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Results from local testing (keep template files)
+results/*.png
+results/*.pdf
+results/graphs/*.png
+results/graphs/*.pdf
+!results/graphs/.gitkeep
