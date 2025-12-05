@@ -1,0 +1,77 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Performance Evaluation of Lightweight Cryptographic Algorithms for IoT Devices}
+
+\author{
+\IEEEauthorblockN{Author Name}
+\IEEEauthorblockA{
+\textit{Department} \\
+\textit{Institution} \\
+Email: author@example.com
+}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a comprehensive performance evaluation of lightweight cryptographic algorithms suitable for resource-constrained IoT devices. We benchmark ASCON, AES-CCM, and ChaCha20 algorithms, analyzing their execution time, memory footprint, and energy consumption. Our results provide insights into selecting appropriate cryptographic solutions for different IoT application scenarios.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Internet of Things, Lightweight Cryptography, ASCON, AES-CCM, ChaCha20, Performance Evaluation
+\end{IEEEkeywords}
+
+\section{Introduction}
+The proliferation of Internet of Things (IoT) devices has created new security challenges. Traditional cryptographic algorithms may be too resource-intensive for constrained devices. This research evaluates lightweight alternatives that provide adequate security while minimizing computational overhead.
+
+\section{Background}
+
+\subsection{ASCON}
+ASCON is a family of authenticated encryption and hashing algorithms designed for lightweight applications. It was selected as the winner of the CAESAR competition for lightweight applications.
+
+\subsection{AES-CCM}
+AES in Counter with CBC-MAC (CCM) mode combines counter mode encryption with CBC-MAC authentication, providing both confidentiality and authenticity.
+
+\subsection{ChaCha20}
+ChaCha20 is a stream cipher designed as an alternative to Salsa20, offering better diffusion and security properties while maintaining high performance on software platforms.
+
+\section{Methodology}
+
+\subsection{Experimental Setup}
+\begin{itemize}
+\item Hardware platform specifications
+\item Software environment and compiler settings
+\item Test data characteristics
+\end{itemize}
+
+\subsection{Benchmarking Approach}
+We measure:
+\begin{itemize}
+\item Encryption/decryption time
+\item Memory usage
+\item Code size
+\item Energy consumption
+\end{itemize}
+
+\section{Results}
+
+\subsection{Performance Comparison}
+% Include graphs and tables here
+% \includegraphics[width=\columnwidth]{../results/graphs/performance_comparison.png}
+
+\subsection{Analysis}
+Discussion of the results and their implications for IoT device security.
+
+\section{Conclusion}
+Summary of findings and recommendations for selecting cryptographic algorithms for specific IoT use cases.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
